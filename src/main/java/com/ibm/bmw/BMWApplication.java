@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DswtrackerApplication {
+public class BMWApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DswtrackerApplication.class, args);
+		SpringApplication.run(BMWApplication.class, args);
 	}
 }

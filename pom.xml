@@ -76,11 +76,6 @@
 			<artifactId>spring-boot-autoconfigure</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.session</groupId>
-			<artifactId>spring-session-data-redis</artifactId>
-		</dependency>
-
 		<!--Spring Boot 开发者工具-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -118,6 +113,14 @@
 			<artifactId>commons-beanutils</artifactId>
 		</dependency>
 
+		<!-- logstash -->
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>5.1</version>
+		</dependency>
+
+
 		<!-- fastJson框架 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -143,27 +146,6 @@
 			<version>${fasterxml.uuid.version}</version>
 		</dependency>
 
-
-
-		<!-- 添加JDBC jar -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-
-		<!-- myBatis的Spring Boot组件 -->
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>${mybatis.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>tk.mybatis</groupId>
-			<artifactId>mapper-spring-boot-starter</artifactId>
-			<version>${tk.mybatis.version}</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
@@ -174,8 +156,6 @@
             <artifactId>annotations-java5</artifactId>
             <version>RELEASE</version>
         </dependency>
-
-
     </dependencies>
 
 	<build>
