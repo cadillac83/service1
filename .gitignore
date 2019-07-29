@@ -1,0 +1,35 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+###Author：Neo###
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.log
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Testing ###
+src/test/
+log/
+.metadata/
+.vscode/settings.json
+.vscode/launch.test.json
+/bin/
+src/main/java/com/ibm/dswt/service/LoginService.java
+src/main/resources/application.yml
