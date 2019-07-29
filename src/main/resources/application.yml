@@ -1,0 +1,49 @@
+##  启动程序后，连Spring的logo都没有出现，主要是yml文件的文件编码不对，要改成UTF-8，有中文注释以后尤其出错
+
+spring:
+  profiles:
+    active: test
+
+---
+################## UAT 环境配置##############################
+spring:
+  profiles: test
+
+server:
+  context-path: /bmw
+  port: 9090
+  max-http-header-size: 102400
+## 日志设置配置信息
+logging:
+  config: classpath:logback-boot_dev.xml
+---
+
+#启用shutdown
+#Spring Boot 状态监控器设置
+endpoints:
+  actuator:
+    enabled: true
+  shutdown:
+    enabled: true
+    sensitive: false
+  health:
+    sensitive: false
+
+#设置security配置
+management:
+  security:
+    enabled: false
+
+## Spring配置:
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+    multipart:
+      enabled: true
+      max-file-size: 5Mb
+      max-request-size: 10Mb
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null

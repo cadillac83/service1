@@ -31,5 +31,3 @@ log/
 .vscode/settings.json
 .vscode/launch.test.json
 /bin/
-src/main/java/com/ibm/dswt/service/LoginService.java
-src/main/resources/application.yml
